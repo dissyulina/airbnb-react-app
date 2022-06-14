@@ -4,11 +4,7 @@
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Poppins', sans-serif;
 }
 
 code {
@@ -29,4 +25,26 @@ nav {
 
 .nav--logo {
   max-width: 100px;
+}
+
+section {
+  padding: 20px;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero--photo {
+  max-width: 400px;
+  align-self: center;
+}
+
+.hero--header {
+  margin-bottom: 16px;
+}
+
+.hero--text {
+  margin-top: 0;
 }

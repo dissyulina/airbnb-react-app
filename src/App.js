@@ -2,21 +2,24 @@ import React from "react"
 import Navbar from "./components/Navbar"
 import Hero from "./components/Hero"
 import Card from "./components/Card"
+import experienceData from "./data"
 
 export default function App() {
+    const experienceElements = experienceData.map(experience => {
+        return (
+            <Card 
+                key={experience.id}
+                experience={experience}
+            />
+        )
+    })
     return (
         <div>
             <Navbar />
             <Hero />
-            <Card 
-                img="katie-zaferes.png"
-                alt="Katie Zaferes photo"
-                rating="5.0" 
-                reviewCount={6} 
-                country="Greece"
-                title="Life Lessons with Katie Zaferes" 
-                price={136}
-            />
+            <section className="cards-list">
+                {experienceElements}
+            </section>
         </div>
     )
 }
